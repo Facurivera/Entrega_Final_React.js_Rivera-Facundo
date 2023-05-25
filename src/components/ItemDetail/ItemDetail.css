@@ -1,0 +1,11 @@
+.Card{
+    display: flex;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 50px;
+}
+.der{
+    width: 40%;
+    text-align: center;
+    margin-inline: auto;
+}

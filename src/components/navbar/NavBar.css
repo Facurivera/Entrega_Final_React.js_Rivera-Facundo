@@ -1,11 +1,11 @@
 .nav-container{
     position: sticky;
+    height: 155px;
+    background-color: rgba(145, 87, 0, 0.795);
 }
 .navbar{
     display: flex;
     justify-content: space-between;
-    height: 120px;
-    background-color: rgba(145, 87, 0, 0.795);
 }
 .navbar-list{
     text-decoration: none;
@@ -35,4 +35,16 @@
     top: 60px;
     right: 80px;
     position: absolute;
+}
+.Option{
+    border: 2px solid;
+    border-radius: 10px;
+    background: rgba(145, 87, 0, 0.795);
+    color: white;
+    text-decoration: none;
+    margin-right: 23px;
+    margin-left: 10px;
+}
+.linea{
+    text-decoration: none;
 }

@@ -1,0 +1,27 @@
+.counter{
+    text-align: center;
+    
+}
+.button{
+    background: rgba(145, 87, 0, 0.795);
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
+    width: 50px;
+}
+.button:hover{
+    color: rgb(3, 112, 255);
+}
+.Agregar{
+    background: rgba(145, 87, 0, 0.795);
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.Agregar:hover{
+    color: rgb(3, 112, 255);
+}
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+}
