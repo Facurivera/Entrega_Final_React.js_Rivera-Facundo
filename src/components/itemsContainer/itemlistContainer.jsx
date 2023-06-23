@@ -1,18 +1,19 @@
 
 import { useState, useEffect } from "react"
-import { getProducts, getProductsByCategory } from "../../asyncMock"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
+
+import { getData, getcategoryData } from "../../services/firebase"
 
 const ItemlistContainer = () => {
   const [productos, setProductos] = useState([])
 
   const {categoryId} = useParams()
 
-  useEffect(() => {
-    const asynFunc = categoryId ? getProductsByCategory : getProducts
+  const Data = categoryId === undefined? getData : getcategoryData
 
-    asynFunc(categoryId)
+  useEffect(() => {
+    Data(categoryId)
       .then(response => {
         setProductos(response)
       }) 

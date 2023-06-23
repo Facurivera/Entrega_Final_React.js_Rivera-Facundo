@@ -13,7 +13,7 @@ const NavBar = () => {
             <Cardwidget />
           </div>
           <div className="categorias">
-            <NavLink to={"/category/computadoras-de-escritorio"} className={({isActive}) => isActive ? "ActiveOption" : "Option"}>Computadora de escritorio</NavLink>
+            <NavLink to={"/category/Computadoras de Escritorios"} className={({isActive}) => isActive ? "ActiveOption" : "Option"}>Computadora de escritorio</NavLink>
             <NavLink to={"/category/Notebooks"} className={({isActive}) => isActive ? "ActiveOption" : "Option"}>Notebooks</NavLink>
             <NavLink to={"/category/Telefonos"} className={({isActive}) => isActive ? "ActiveOption" : "Option"}>Telefonos</NavLink>
             <NavLink to={"/category/Tablets"} className={({isActive}) => isActive ? "ActiveOption" : "Option"}>Tablets</NavLink>
