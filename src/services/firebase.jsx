@@ -26,8 +26,8 @@ export async function getData() {
     return dataDocs
 }
 
-export async function getItemData() {
-    const docRef = doc(db, "productos", "PmaxKtZGy7OMKKlSWwKY")
+export async function getItemData(idUrl) {
+    const docRef = doc(db, "productos", idUrl)
     const docSnap = await getDoc(docRef)
     return { id: docSnap.id, ...docSnap.data()}
 }

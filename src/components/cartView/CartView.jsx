@@ -2,9 +2,37 @@ import "./CartView.css"
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { Link } from "react-router-dom"
+import { createOrdenes } from "../../services/firebase"
+import Swal from "sweetalert2"
 
 const CartView = () => {
     const {cart, clearCart, removeItem, cantidadTotal, total} = useContext(CartContext)
+
+    async function confirmacion () {
+    
+        const orden = {
+            item: cart,
+            cliente:{
+                nombre: "fulano",
+                cel:"1133113",
+                email:"a@gmail.com",
+            },
+            data: new Date(),
+            precio: {total}
+        }
+        const id = await createOrdenes(orden)
+        console.log("respuesta", id)
+        Swal.fire({
+            icon: 'success',
+            title: 'compra realizada',
+            text: 'Muchas gracias por su compra',
+            text: 'el orden de compra es' + id,
+            color: "black",
+            confirmButtonColor: "rgba(145, 87, 0, 0.795)",
+            confirmButtonTextColor: "white",
+          })
+        clearCart()
+    }
 
     if( cantidadTotal === 0) {
         return(
@@ -32,7 +60,7 @@ const CartView = () => {
                 </div>
                 <div className="final">
                     <h4 className="total">Total a pagar: {total} </h4>
-                    <Link to="/checkout" className="checkout">Finalizar Compra</Link>
+                    <button onClick={confirmacion} className="checkout">Crear orden de compra</button>
                     <button onClick={() => clearCart()} className="vaciar">Vaciar Carrito</button>
                 </div>
             </div>
