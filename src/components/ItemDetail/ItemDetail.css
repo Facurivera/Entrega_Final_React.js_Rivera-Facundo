@@ -1,0 +1,28 @@
+.Card{
+    display: flex;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 50px;
+}
+.der{
+    width: 40%;
+    text-align: center;
+    margin-inline: auto;
+}
+.finalizar{
+    background: rgb(245 162 36 / 80%);
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
+.seguir{
+    background: rgb(245 162 36 / 80%);
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 30px;
+}

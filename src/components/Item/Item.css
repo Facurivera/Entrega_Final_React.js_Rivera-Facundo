@@ -1,0 +1,33 @@
+.CardItem{
+    max-width: 350px;
+    max-height: 550px;
+    margin: 40px;
+    margin-bottom: 40px;
+    width: 350px;
+}
+.Header{
+    color: rgb(245 162 36 / 80%);
+}
+.ItemHeader{
+    font-size: 25px;
+    height: 60px;
+}
+.ItemImg{
+    width: 350px;
+    height: 350px;
+}
+.Info{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(245 162 36 / 80%);
+    color: white;
+    font-size: larger;
+}
+.detalle{
+    border: 1px solid black;
+    border-radius: 10px;
+    background: rgb(245 162 36 / 80%);
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}

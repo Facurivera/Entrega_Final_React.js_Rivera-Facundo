@@ -1,0 +1,58 @@
+.nav-container{
+    position: sticky;
+    height: 155px;
+    background-color: rgb(245 162 36 / 80%);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-list{
+    text-decoration: none;
+    color: white;
+}
+.navbar-titulo{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.seecarrito{
+    width: 50px;
+    margin: 25px;
+    margin-right: 100px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+.itemscart{
+    background-color: rgb(3, 112, 255);
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    top: 60px;
+    right: 80px;
+    position: absolute;
+}
+.Option{
+    border: 2px solid;
+    border-radius: 10px;
+    background: rgb(245 162 36 / 80%);
+    color: white;
+    text-decoration: none;
+    margin-right: 23px;
+    margin-left: 10px;
+}
+.ActiveOption{
+    border: 2px solid;
+    border-radius: 10px;
+    background: rgb(245 162 36 / 80%);
+    text-decoration: none;
+    margin-right: 23px;
+    margin-left: 10px;
+}
+.linea{
+    text-decoration: none;
+}
