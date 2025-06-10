@@ -25,8 +25,7 @@ const CartView = () => {
         Swal.fire({
             icon: 'success',
             title: 'compra realizada',
-            text: 'Muchas gracias por su compra',
-            text: 'el orden de compra es' + id,
+            text: 'Muchas gracias por su compra. El orden de compra es' + id,
             color: "black",
             confirmButtonColor: "rgb(245 162 36 / 80%)",
             confirmButtonTextColor: "white",
